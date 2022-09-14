@@ -96,54 +96,25 @@
           >
             <div class="accordion-body">
               <p>
-                <span class="text-english">Regular Function&nbsp;</span> যখন
-                <span class="text-english">Function Declaration&nbsp;</span>,
-                তখন তা <span class="text-english">Named Function&nbsp;</span>।
-                <span class="text-english">Regular Function&nbsp;</span> যখন
-                <span class="text-english">Function Expression&nbsp;</span>, তখন
-                তা <span class="text-english">Named Function&nbsp;</span> বা
-                <span class="text-english">Anonymous Function&nbsp;</span>
-                দুইটাই হতে পারে। অন্যদিকে,
-                <span class="text-english">Arrow Function&nbsp;</span> সদা
-                <span class="text-english">Anonymous&nbsp;</span>।
+                জাভাস্ক্রিপ্টে এক বা একাধিক স্টেটমেন্টকে একটি ওপেনিং ব্র্যাস ও একটি ক্লোজিং ব্র্যাসে
+                আবদ্ধ করলে ব্র্যাস দুইটিসহ স্টেটমেন্টগুলোকে সামষ্টিকভাবে 
+                একটি ব্লক ( <strong class="text-english">Block</strong>) বলা হয়।
               </p>
               <p>
-                <span class="text-english">Regular Function</span>-এর তুলনায়
-                <span class="text-english">Arrow Function</span>-এর সিনট্যাক্সে
-                বাঁচালতা কম (মানে কী-ওয়ার্ড বা টোকেনের ব্যবহার কম)। যেমন—
-                <span class="text-english"><code>function</code>&nbsp;</span>
-                কীওয়ার্ড লিখতে হয় না। প্যারামিটার একটা হলে প্যারেন্থিসিস দরকার
-                হয় না। আবার কখনো কখনো (কখন? সবাই জানে!) যে ফাংশন বডির ব্র্যাসেস
-                ও বডির ভেতরে
-                <span class="text-english"><code>return</code>&nbsp;</span>
-                কীওয়ার্ড বাদেই ভ্যালু রিটার্ন করা যায়, তাতে কে মুগ্ধ হয় না?
+                একেকটি ব্লক ঐ ব্লকের বিভিন্ন সত্তার জন্য একেকটি স্কোপ নির্ধারণ করে। 
+                এটাকেই <strong class="text-english">Block Scope</strong> বলে।
+              </p>
+              <p>জাভাস্ক্রিপ্ট স্ক্রিপ্ট বা প্রোগ্রাম যখন এক্সিকিউশন শুরু হয়, তখন 
+                কোনোরকম ফাংশন ডিক্লারেশন, ফাংশন এক্সপ্রেশন, ক্লাস ডিফিনিশন বা 
+                ব্র্যাসেস (বা সেকেন্ড ব্র্যাকেট)-এর বাইরে যে স্কোপ, সেটাই গ্লোবাল স্কোপ।
               </p>
               <p>
-                <span class="text-english">Regular Function&nbsp;</span> প্রতিটি
-                ইনভোকেশনে ইনভোকেশনের ধরণ অনুযায়ী নিজের ভিতরে
-                <span class="text-english"><code>this</code>&nbsp;</span>
-                কীওয়ার্ডের নিজস্ব মান তৈরি করে। অন্যদিকে,
-                <span class="text-english">Arrow Function&nbsp;</span> তা করে
-                না— সে সবসময় প্যারেন্ট লেক্সিক্যাল কনটেক্সটের
-                <span class="text-english"><code>this</code></span
-                >-এর মান ধরে রাখে।
-              </p>
-              <p>
-                নিজস্ব
-                <span class="text-english"><code>this</code>&nbsp;</span> তৈরি
-                না করার কারণে
-                <span class="text-english">Arrow Function&nbsp;</span> কখনো
-                <span class="text-english">Object Constructor&nbsp;</span>
-                হিসেবে ব্যবহার করা যায় না।
-              </p>
-              <p>
-                <span class="text-english">Regular Function</span>-এর সাথে
-                আরেকটা বৈসাদৃশ্য—
-                <span class="text-english">Arrow Function</span>-এর ভেতরে
-                <span class="text-english"><code>arguments</code>&nbsp;</span>
-                বা
-                <span class="text-english"><code>super</code></span
-                >-এর নিজস্ব বাইন্ডিং নেই।
+                একটি জাভাস্ক্রিপ্ট প্রোগ্রামে <strong class="text-english">Global Scope</strong>-ই হলো 
+                <strong class="text-english">Root Scope</strong>। বাকি সব 
+                <strong class="text-english">Function Scope</strong> ও 
+                <strong class="text-english">Block Scope</strong> এই 
+                <strong class="text-english">Global Scope</strong>-এরই 
+                <span class="text-english">Nested Scope</span>।
               </p>
             </div>
           </div>
