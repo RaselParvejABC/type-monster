@@ -11,6 +11,12 @@ let errorCount = 0;
 let startTime;
 let questionText = "";
 
+/*
+When Body Height is more than 100vh,
+Space Keydown makes the body scroll to the bottom.
+The following Event Listener Stops that Default Action.
+*/
+
 window.addEventListener("keydown", function (e) {
   if (e.key == " " && e.target == document.body) {
     e.preventDefault();
