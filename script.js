@@ -11,6 +11,12 @@ let errorCount = 0;
 let startTime;
 let questionText = "";
 
+window.addEventListener("keydown", function (e) {
+  if (e.key == " " && e.target == document.body) {
+    e.preventDefault();
+  }
+});
+
 // Load and display question
 fetch("./texts.json")
   .then((res) => res.json())
