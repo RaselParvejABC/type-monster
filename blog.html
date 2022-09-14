@@ -219,29 +219,35 @@
           >
             <div class="accordion-body">
               <p>
-                <span class="text-english">Single Quote String Literal</span
-                >&nbsp; বা
-                <span class="text-english">Double Quote String Literal</span>-এর
-                তুলনায়
-                <span class="text-english">Template String Literal</span>&nbsp;
-                দিয়ে <span class="text-english">Multiline String</span>&nbsp;
-                তৈরি করা সিনট্যাক্টিক্যালি কম বাঁচালতাসম্পন্ন, ফলে সহজতর।
-                <span class="text-english">Multiline HTML Element String</span
-                >&nbsp; লিখার সময় ব্যাপারটা বিতর্কের বাইরে স্পষ্ট হয়।
-              </p>
-              <p>
-                <span class="text-english">Variable</span>&nbsp; বা জটিলতর
-                <span class="text-english">Expression</span>-এর মান যখন ছোট ছোট
-                স্ট্রিং-এর সাথে কনকেট করে বড় স্ট্রিং তৈরি করতে হয়, তখন সিঙ্গেল
-                কোট বা ডাবল কোট স্ট্রিং ব্যবহার করলে, এই 'কোটের বাইরে যাই' তো,
-                এই 'কোটের ভেতরে', 'এখন বাইরে নাকি ভেতরে'— এহেন নানা বিড়ম্বনায় যে
-                জ্বলেছে, সে বুঝে। অন্যদিকে,
-                <span class="text-english">Template String Literal</span>&nbsp;
-                ব্যবহার করলে,যতই
-                <span class="text-english">Variable</span>&nbsp; বা
-                <span class="text-english">Expression</span>-এর মান রেজাল্টিং
-                স্ট্রিং-এ ইন্টারপোলেট করা লাগুক না কেন, আমরা পুরো সময় এক জোড়া
-                ব্যাকটিকের পরম মমতায়।
+                জাভাস্ক্রিপ্টে এক্সপ্রেশন ভ্যালু হিসেবে বিভিন্নভাবে
+                <code class="text-english">undefined</code> আসতে পারে। যেমন—
+                <ol>
+                  <li>
+                    <code class="text-english">var</code> বা 
+                    <code class="text-english">let</code>
+                     দিয়ে ডিক্লেয়ার করা ভ্যারিয়েবলের ভ্যালু ডিক্লারেশন স্টেট্মেন্টে 
+                     <code class="text-english">undefined</code>-এ ইনিশিয়ালাইজ করলে
+                      বা <code class="text-english">undefined</code> বাদে অন্যকিছুতে ইনিশিয়ালাইজ না করলে,
+                      ভ্যারিয়েবলের মান <code class="text-english">undefined</code> থাকে।
+                  </li>
+                  <li>
+                    <code class="text-english">var</code> 
+                     দিয়ে ডিক্লেয়ার করা ভ্যারিয়েবলের ডিক্লারেশন স্টেট্মেন্টের আগে 
+                     ভ্যারিয়েবলটির ফাংশন স্কোপে (বা গ্লোবাল কনটেক্সটে গ্লোবাল স্কোপে)
+                     ভ্যারিয়েবলের মান <code class="text-english">undefined</code> থাকে।
+                  </li>
+                  <li>
+                    ফাংশন <code class="text-english">undefined</code> রিটার্ন করলে 
+                    বা ফাংশন এক্সপ্লিসিটলি কিছু রিটার্ন না করলে, ফাংশন ইনভোকেশন এক্সপ্রেশনের মান 
+                    <code class="text-english">undefined</code> হয়।
+                  </li>
+                  <li>
+                    ফাংশন ইনভোকেশনের সময় যেসকল প্যারামিটারের বিপরীতে আর্গুমেন্ট দেওয়া হয় না, 
+                    ফাংশন বডির ভেতরে সেসকল 
+                    প্যারামিটারের মান <code class="text-english">undefined</code> হয়,
+                    যদি না ওই প্যারামিটারের ডিফল্ট ভ্যালু থাকে।
+                  </li>
+                </ol>
               </p>
             </div>
           </div>
