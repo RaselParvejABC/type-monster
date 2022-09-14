@@ -67,7 +67,18 @@
             data-bs-parent="#faqs"
           >
             <div class="accordion-body">
-              <p></p>
+              <p><code class="text-english">localStorage</code>-এ রাখা তথ্য স্থায়ী। 
+                ওয়েব এ্যাপ নিজে ডিলিট না করলে বা ইউজার ব্রাউজারের ইউজার ইন্টারফেস ব্যবহার করে 
+                ব্রাউজারকে ডিলিট করতে না বললে, 
+                <code class="text-english">localStorage</code>-এর তথ্য ডিলিট হয় না। 
+                কিন্তু, ব্রাউজার ট্যাব বা উইন্ডো ক্লোজ হওয়ার সাথে সাথে, তথা সেশন শেষ হলেই 
+                <code class="text-english">sessionStorage</code>-এ রাখা ডাটা ডিলিট হয়ে যায়।
+              </p>
+              <p>
+                ব্রাউজারের একাধিক ট্যাব বা উইন্ডোতে একই ডকুমেন্ট (একই <span class="text-english">Origin</span> ) ওপেন থাকলে, প্রতিটি ডকুমেন্টের একই 
+                <code class="text-english">localStorage</code> হয়। কিন্তু 
+                <code class="text-english">sessionStorage</code> হয় ভিন্ন ভিন্ন।
+              </p>
             </div>
           </div>
         </div>
@@ -101,7 +112,7 @@
                 একটি ব্লক ( <span class="text-english">Block</span>) বলা হয়।
               </p>
               <p>
-                একেকটি ব্লক ঐ ব্লকের বিভিন্ন সত্তার জন্য একেকটি স্কোপ নির্ধারণ করে। 
+                একেকটি ব্লক ঐ ব্লকের বিভিন্ন ভ্যারিয়েবলের জন্য একেকটি স্কোপ নির্ধারণ করে। 
                 এটাকেই <span class="text-english">Block Scope</span> বলে।
               </p>
               <p>জাভাস্ক্রিপ্ট স্ক্রিপ্ট বা প্রোগ্রাম যখন এক্সিকিউশন শুরু হয়, তখন 
@@ -196,14 +207,14 @@
                   <li>
                     <code class="text-english">var</code> বা 
                     <code class="text-english">let</code>
-                     দিয়ে ডিক্লেয়ার করা ভ্যারিয়েবলের ভ্যালু ডিক্লারেশন স্টেট্মেন্টে 
+                     দিয়ে ডিক্লেয়ার করা ভ্যারিয়েবলের ভ্যালু ডিক্লারেশন স্টেটমেন্টে 
                      <code class="text-english">undefined</code>-এ ইনিশিয়ালাইজ করলে
                       বা <code class="text-english">undefined</code> বাদে অন্যকিছুতে ইনিশিয়ালাইজ না করলে,
                       ভ্যারিয়েবলের মান <code class="text-english">undefined</code> থাকে।
                   </li>
                   <li>
                     <code class="text-english">var</code> 
-                     দিয়ে ডিক্লেয়ার করা ভ্যারিয়েবলের ডিক্লারেশন স্টেট্মেন্টের আগে 
+                     দিয়ে ডিক্লেয়ার করা ভ্যারিয়েবলের ডিক্লারেশন স্টেটমেন্টের আগে 
                      ভ্যারিয়েবলটির ফাংশন স্কোপে (বা গ্লোবাল কনটেক্সটে গ্লোবাল স্কোপে)
                      ভ্যারিয়েবলের মান <code class="text-english">undefined</code> থাকে।
                   </li>
