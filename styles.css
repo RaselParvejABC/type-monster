@@ -75,6 +75,10 @@ body {
   text-align: center;
   padding: 2rem;
 }
+
+#result button {
+  margin-top: 1rem;
+}
 #show-time {
   text-align: center;
   color: white;
