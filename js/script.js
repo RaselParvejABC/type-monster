@@ -14,7 +14,7 @@ let questionText = "";
 /*
 When Body Height is more than 100vh,
 Space Keydown makes the body scroll to the bottom.
-The following Event Listener Stops that Default Action.
+The following Event Listener prevents that Default Action.
 */
 
 window.addEventListener("keydown", function (e) {
@@ -37,6 +37,7 @@ const typeController = (e) => {
 
   // Handle backspace press
   if (newLetter == "Backspace") {
+    if (userText === "") return;
     userText = userText.slice(0, userText.length - 1);
     return display.removeChild(display.lastChild);
   }
